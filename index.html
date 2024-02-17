@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>PoliticalMeter</title>
+</head>
+
+<body>
+  <header>
+    <h1>Political Meter</h1>
+  </header>
+  <main>
+    <form>
+      <section id="questionnaire">
+        <h2>Question on Economic Policy:</h2>
+        <label for="taxes">"Do you believe in higher taxes and more government spending on social programs?"</label>
+        <select name="taxes" id="taxes">
+          <option value="saTaxes">Strongly Agree</option>
+          <option value="aTaxes">Agree</option>
+          <option value="nTaxes">Neutral</option>
+          <option value="dTaxes">Disagree</option>
+          <option value="sdTaxes">Strongly Disagree</option>
+        </select>
+        <h2>Question on Social Issues:</h2>
+        <label for="social">"Should there be stricter regulations on gun ownership?"</label>
+        <select name="social" id="social">
+          <option value="saSocial">Strongly Agree</option>
+          <option value="aSocial">Agree</option>
+          <option value="nSocial">Neutral</option>
+          <option value="dSocial">Disagree</option>
+          <option value="sdSocial">Strongly Disagree</option>
+        </select>
+        <h2>Question on Governance:</h2>
+        <label for="governance">"Is it important to have a strong leader who doesn't have to deal with congress or
+          elections?"</label>
+        <select name="governance" id="governance">
+          <option value="saGovernance">Strongly Agree</option>
+          <option value="aGovernance">Agree</option>
+          <option value="nGovernance">Neutral</option>
+          <option value="dGovernance">Disagree</option>
+          <option value="sdGovernance">Strongly Disagree</option>
+        </select>
+        <h2>Question on Healthcare:</h2>
+        <label for="healthcare">"Should healthcare be provided as a free service to all citizens?"</label>
+        <select name="healthcare" id="healthcare">
+          <option value="saHealthcare">Strongly Agree</option>
+          <option value="aHealthcare">Agree</option>
+          <option value="nHealthcare">Neutral</option>
+          <option value="dHealthcare">Disagree</option>
+          <option value="sdHealthcare">Strongly Disagree</option>
+        </select>
+        <h2>Question on National interests:</h2>
+        <label for="interests">"Should the country prioritize its own national interests over international alliances
+          and agreements?"</label>
+        <select name="interests" id="interests">
+          <option value="saInterests">Strongly Agree</option>
+          <option value="aInterests">Agree</option>
+          <option value="nInterests">Neutral</option>
+          <option value="dInterests">Disagree</option>
+          <option value="sdInterests">Strongly Disagree</option>
+        </select>
+        <h2>Question on Education:</h2>
+        <label for="education">"Should schools have the option to not follow federal education standards in favor of
+          local or state curriculum decisions?"</label>
+        <select name="education" id="education">
+          <option value="saEducation">Strongly Agree</option>
+          <option value="aEducation">Agree</option>
+          <option value="nEducation">Neutral</option>
+          <option value="dEducation">Disagree</option>
+          <option value="sdEducation">Strongly Disagree</option>
+        </select>
+        <br>
+        <button type="submit">Show the result!</button>
+        <button type="button" class="hidden">Reset!</button>
+      </section>
+    </form>
+    <section id="result" class="hidden">
+      <p>Your liberal score: <span id="liberalScore"></span></p>
+      <p>Your conservative score: <span id="conservativeScore"></span></p>
+      <div id="liberalResult" class="hidden">
+        <p>So, you are liberal</p>
+      </div>
+      <div id="moderateResult" class="hidden">
+        <p>So, you are moderate</p>
+      </div>
+      <div id="conservativeResult" class="hidden">
+        <p>So,you are conservative</p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
